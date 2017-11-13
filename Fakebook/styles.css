@@ -1,0 +1,55 @@
+
+#div1 {
+    position: sticky;
+    top: 0;
+    border: 2px solid #29487d;
+    background-color: #29487d;
+    word-spacing: 10px;
+    color: white;
+}
+
+#span1 {
+    position: absolute;
+    left: 50px;
+    font-size: 20px;
+    font-family: "consolas"
+}
+#span2 {
+
+    position: absolute;
+    left: 200px;
+    font-size: 20px;
+}
+input {
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    }
+.container {
+    position: relative;
+}
+.name {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    font-size: 18px;
+}
+#cover {
+    display: block;
+    margin: auto;
+    border: 3px
+    }
+
+#profile {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    border: 3px solid;
+    }
+.name {
+position: absolute;
+    left: 600px;
+    font-size: 40px;
+    color: black;
+    border: 2px white;
+}
