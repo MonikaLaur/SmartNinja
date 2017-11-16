@@ -1,0 +1,73 @@
+#logoimg {
+    max-height: 150px ;
+    max-width: 150px ;
+}
+#logo{
+    max-width: 150px;
+    margin: 0 auto;
+}
+.text {
+    position: relative ;
+    top: -20px ;
+    max-width: 600px ;
+    margin: 0 auto ;
+    text-align: center ;
+    color:  #4d4d4d ;
+    font-family: "Haveltica new", Arial, Sans-serif ;
+    letter-spacing: 0.2em
+}
+
+h1 {
+    margin: 0 auto ;
+    font-weight: 50 ;
+
+}
+
+h3 {
+    margin: 0 auto ;
+    font-weight: 50;
+}
+
+.container {
+
+    height: 400px ;
+    width: 400px ;
+    margin: 0 auto;
+    border: 1px;
+    background-color: #e6e6e6 ;
+
+}
+#profilepic {
+    height: 175px;
+    width: 175px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto ;
+}
+#profile {
+    width: 175px;
+}
+input {
+    height: 50px;
+    width: 275px;
+    display: block ;
+    margin: 10px auto ;
+    background-color: #ffffcc ;
+    font-size: 1.4em;
+}
+button {
+    display: block ;
+    margin: 0 auto ;
+    height: 50px;
+    width: 280px;
+    color: white;
+    font-weight: 500;
+    background-color: blue;
+    font-size: 1em;
+}
+a {
+   display: block ;
+   margin: 0 0 0 auto;
+   text-align: right;
+   padding: 10px;
+}
