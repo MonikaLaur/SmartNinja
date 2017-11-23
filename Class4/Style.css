@@ -1,0 +1,47 @@
+body {
+    padding-top: 70px;
+    }
+
+#myCarousel {
+    max-width: 700px;
+    margin: 0 auto
+}
+.item {
+  max-width: 700px;
+  max-height: 350px;
+  }
+.main-headings {
+padding: 15px;
+text-align: center;
+}
+.main-text {
+text-align: center;
+padding:10px;
+}
+
+.form-area {
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+	}
+.business-hours {
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+}
+.business-hours li {
+    line-height: 40px;
+    border-bottom: 1px solid #333;
+}
+.idomybes {
+max-width: 1140px;
+padding:15px;
+margin: 0 auto;
+text-align: center;
+}
+.footer{
+padding: 30px;
+background-color: #FAFAFA;
+}

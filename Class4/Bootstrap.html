@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kavininkai</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <!-- JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Kavininkai</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Pagrindinis Puslapis <span class="sr-only">(current)</span></a></li>
+      </ul>
+      <form class="navbar-form pull-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Paieška">
+        </div>
+        <button type="submit" class="btn btn-default">Ieškoti</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#v" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Siūlomos Paslaugos<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#aparatai">Aparatai</a></li>
+            <li><a href="#prieziura">Priežiūra</a></li>
+            <li><a href="#kavos-rusys">Kavos Rūšys</a></li>
+          </ul>
+        </li>
+        <li><a href="#susisiekyte">Susisiekite su mumis</a></li>
+        <li><a href="#idomybes">Įdomybės</a></li>
+          <li><a data-toggle="modal" data-target="#myModal">Apie Mus</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://images.pexels.com/photos/416461/pexels-photo-416461.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Roasted Coffee Beans" class="img-responsive">
+    </div>
+
+     <div class="item">
+      <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?auto=format&fit=crop&w=1049&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Coffee" class="img-responsive">
+    </div>
+
+    <div class="item">
+      <img src="https://images.pexels.com/photos/111128/coffee-beans-coffee-beans-roasting-111128.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Coffee" class="img-responsive">
+    </div>
+
+    <div class="item">
+      <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Coffee" class="img-responsive">
+    </div>
+
+    <div class="item">
+      <img src="https://images.pexels.com/photos/92354/pexels-photo-92354.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="Coffee" class="img-responsive">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ <div class="Paslaugos">
+        <div class="container" id="visos-paslaugos">
+            <h2 class="main-headings">Siūlomos Paslaugos</h2>
+            <p class="main-text">Pasirinkite paslaugą pritaikyta jūsų poreikiams</p>
+            <div class="row">
+              <div class="col-md-4">
+                    <div class="thumbnail" id="kavos-rusys">
+                        <img class="img-responsive thumbnail_img" src="https://www.melbacoffee.com.au/image/catalog/products/coffee-beans.jpg">
+                      <div class="caption">
+                      <h3>Kavos Rušys</h3>
+                        <p>Skirtyngos skrudintos ir neskrudintos kavos rūšys</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Daugiau</a></p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                    <div class="thumbnail" id="aparatai">
+                        <img class="img-responsive thumbnail_img" src="http://www.kavininkai.lt/uploads/images/Kavos_aparatai/HoReCa/67-img-Royal-Office_HI-RES.jpg">
+                      <div class="caption">
+                      <h3>Kavos Aparatai</h3>
+                        <p>Pasirinkite aparata geriausiai tinkanti jūsu poreikiams</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Daugiau</a></p>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                    <div class="thumbnail" id="prieziura">
+                        <img class="img-responsive thumbnail_img" src="http://savorcoffee.com//wp-content/uploads/2014/01/technician-working.jpg">
+                      <div class="caption">
+                      <h3>Kavos Aparatų Priežiūra</h3>
+                        <p>Skirtingos priežiūros paslaugos bei aparatų detalės</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Daugiau</a></p>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+   </div>
+ <div class="Contact" id="susisiekyte">
+        <div class="container">
+            <h2 class="main-headings">Susisiekyte su mumis</h2>
+            <div class="row">
+              <div class="col-md-5" style="float: left; margin: 0 auto;">
+                  <div class="form-area">
+                      <form role="form">
+                      <br style="clear:both">
+                        <h3 style="margin-bottom: 25px; text-align: center;">Susisiekite</h3>
+                        <div class="form-group">
+						  <input type="text" class="form-control" id="name" name="name" placeholder="Vardas Pavardė" required>
+					    </div>
+					    <div class="form-group">
+						  <input type="text" class="form-control" id="email" name="email" placeholder="El Paštas" required>
+					    </div>
+					    <div class="form-group">
+						  <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Telefono Numeris" required>
+					    </div>
+					    <div class="form-group">
+						  <input type="text" class="form-control" id="subject" name="subject" placeholder="Tema" required>
+					    </div>
+                        <div class="form-group">
+                          <textarea class="form-control" type="textarea" id="message" placeholder="Žinutė" maxlength="140" rows="7"></textarea>
+                          <span class="help-block"><p id="characterLeft" class="help-block ">Jus pasiekėte žodžių ribą</p></span>
+                        </div>
+                        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Išsiūsti</button>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-sm-5" style="float: right; margin: 0 auto;">
+                <div class="business-hours">
+                    <h3 style="margin-bottom: 25px; text-align: center;">Darbo Valandos</h3>
+                        <ul class="list-unstyled opening-hours">
+                            <li>Pirmadienis <span class="pull-right">08:00-18:00</span></li>
+                            <li>Antradienis <span class="pull-right">08:00-18:00</span></li>
+                            <li>Trečiadienis <span class="pull-right">08:00-18:00</span></li>
+                            <li>Ketvirtadienis <span class="pull-right">08:00-18:00</span></li>
+                            <li>Penktadienis <span class="pull-right">08:00-18:00</span></li>
+                            <li>Šeštadienis <span class="pull-right">Nedirbame</span></li>
+                            <li>Sekmadienis <span class="pull-right">Nedirbame</span></li>
+                        </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+ </div>
+<div class="Other" id="idomybes">
+    <div class="container">
+            <h2 class="main-headings">Įdomybės</h2>
+            <div class="container idomybes">
+                         <h3>Kavos Istoryja</h3>
+                            <p>ETIOPIJA <br>
+                                Kavos augalas, kuris buvo rastas 11 amžiuje Etiopijoje, baltais žiedais, kvepia kaip jazminai, vaisiai raudoni panašūs į vyšnias. Anuomet buvo vadinamas „stebuklingu vaisiumi“, lapus virdavo vadenyje ir toks viralas buvo manoma turintis gydomųjų savybių. Kai kavos augalų šlovė išplito į kitus kraštus, prasidėjo jos ilgaamžė kelionė.</p>
+                    </div>
+            <div class="container idomybes">
+                         <h3>Kad Kava Butu Gardi</h3>
+                            <p> - Laikykite ją atskirai nuo kitų stiprių aromatą turinčių produktų.
+                                <br>- Prieš maldami kavos pupeles pakaitinkite orkaitėje – bute maloniai kvepės, o išvirta kava bus kvapnesnė.
+                                <br>- Prieš virdami sumaltą kavą truputį pakaitinkite ant ugnies ir įberkite kelis kristalėlius valgomosios druskos .
+                                <br>- Neleiskite kavai virti, nes ji bus nekvapni, prastesnio skonio.
+                                <br>- Niekada kavos gėrimo  „neatšildykite“ , nes jis netenka aromato.
+                                <br>- Atkreipkite dėmesį ir į vandenį. Kuo daugiau jame deguonies, tuo jis tinkamesnis. Ypač tinka šaltinio vanduo.
+                                <br>- Taip pat labai svarbu plikymo temperatūra ir trukmė. Tinkamiausia kavos plikymo temperatūra yra 90 C.  Aukštesnėje temperatūroje išvirta kava bus karti, o žemesnėje – įgaus „žemės“  skonį. Kavą reikia plikyti ne ilgiau kaip dvi minutes.
+                                <br>- Pupeles smulkiai sumalkite. Ir nepalikite „atsargos“ kitam kartui. Mat ji labai greitai išsivadėja ir netenka aromato. Manoma, kad puodukui geros, aromatingos, stiprios kavos reikia nepilno šaukšto maltos kavos ir 150 ml (du trečdaliai stiklinės) vandens.
+                                <br>- Gerą kavą galima paruošti ir be aparato. Pakaks molinio kavinuko (idealiai švaraus, įkaitinto), gerų pupelių, šaltinio vandens ir trupučio pastangų. Maltą kavą suberkite į kavinuką, užpilkite karštu vandeniu (90o C ) ir po 2 min. Perkoškite į pašildytą puodelį.
+                                <br>- Kuo kava stipresnė, tuo į mažesnį puoduką pilama.
+                                <br>- Prie kavos patiekiami maži sumuštiniai, saldumynai, ledai, vaisiai, iš gėrimų tinka konjakas, krupnikas ar likeris. Kai kas mėgsta kavą su pienu ar grietinėle.
+                                <br>- Kavos pilama pro dešiniąją svečio pusę. Ant atvėsusios kavos užpilti karštos nedera, reikia šaltą išpilti ir įpilti karštos.
+                            </p>
+            </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Kontaktai</h3>
+                    <p>"Kavininkai"<br>
+                V. Vencevičiūtės i.v.<br> Bartų g. 26 Vilniaus raj.<br> Buivydiškeės <br> Tel./Fax.: +37069822228<br> El.p.: vend@inbox.lt
+                    </p>
+                </div>
+
+            <div class="col-md-3 pull-right">
+                            <h3> Navigacija</h3>
+                                <ul>
+                                    <li>Siūlomos Paslaugos</li>
+                                    <li>Susisiekyte su mumis</li>
+                                    <li>Įdomybės</li>
+                                </ul>
+                        </div>
+            </div>
+        </div>
+    </footer>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h4 class="modal-title">Apie Mus</h4>
+            </div>
+            <div class="modal-body">
+                <p>Mes esame Kavininkai - tavo personalus kavos aparatų tiekėjas ir prižiūrėtojas. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Uždaryti</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
