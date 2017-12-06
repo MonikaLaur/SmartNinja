@@ -12,4 +12,5 @@ while True:
 
     entry = raw_input("Would you like to convert another value? (press n to exit)")
     if entry == "n":
+        print "Thank you for using Unit Converter!"
         break
