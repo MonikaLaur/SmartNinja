@@ -7,7 +7,7 @@ background-color: #614144 ;
 .navbar-default .navbar-nav li a {
 font-family: "Book Antiqua";
 color: white;
-letter-spacing: 2px;
+letter-spacing: 1.5px;
 
 }
 .navbar-brand {
@@ -35,6 +35,9 @@ text-align: center;
 font-family: "Didot";
 font-size: 40px;
 }
+#susisiekyte .main-headings {
+    color: white;
+    }
 p{
 font-family: "Book Antiqua";
 }
