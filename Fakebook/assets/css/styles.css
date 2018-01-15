@@ -1,11 +1,13 @@
 
 #div1 {
     position: sticky;
-    top: 0;
+    top: -1;
     border: 2px solid #29487d;
     background-color: #29487d;
     word-spacing: 10px;
     color: white;
+    margin: 0;
+    padding: 2px 0 0 60px;
 }
 
 #span1 {
@@ -15,7 +17,6 @@
     font-family: "consolas"
 }
 #span2 {
-
     position: absolute;
     left: 200px;
     font-size: 20px;
@@ -43,7 +44,7 @@ input {
 #profile {
     position: absolute;
     bottom: 10px;
-    left: 150px;
+    left: 200px;
     border: 3px solid;
     }
 .name {
@@ -52,4 +53,9 @@ position: absolute;
     font-size: 40px;
     color: black;
     border: 2px white;
+}
+button {
+    color: white;
+    background-color: #29487d ;
+    font-size: 20px;
 }

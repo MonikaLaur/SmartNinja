@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog Page</h1>
+    <h2> My Lucky Number: {{site_my_number}}</h2> <!-- {{ wert }} -->
+    <h3>Today is: {{time}}</h3>
+    <br>
+    <br>
+    <h3> History</h3>
+    <ul>
+        {% for entry in site_history %}
+        <li>{{entry}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
