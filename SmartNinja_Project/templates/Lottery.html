@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Lottery</title>
-</head>
-<body>
-    <h1>Welcome to lottery!</h1>
-    <h2> Today's lucky numbers are: {{give_me_lotto}}</h2><!-- {{ wert }} -->
-    <h3> Today's Date: {{time}} </h3>
-    <br>
-    <br>
-    <h2>Lottey History</h2>
-    <ul>
-        {% for entry in site history %}
-        <li> {{entry}} </li>
-        {% endfor %}
-    </ul>
+{% extends "frame.html" %}
 
-</body>
-</html>
+{% block title %} .lottery {% endblock title %}
+
+
+{% block page_content %}
+
+
+<h1>Welcome to lottery!</h1>
+<h2> Today's lucky numbers are: {{give_me_lotto}}</h2><!-- {{ wert }} -->
+<h3> Today's Date: {{time}} </h3>
+<br>
+<br>
+<h2>Lottery History</h2>
+<ul>
+    {% for entry in site_history %}
+    <li> {{entry}} </li>
+    {% endfor %}
+</ul>
+
+{% endblock page_content %}

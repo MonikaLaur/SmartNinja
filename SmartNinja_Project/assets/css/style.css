@@ -1,4 +1,13 @@
 body {
-    background-color: #00ccff;
-}
+    padding-top: 70px;
 
+}
+.navbar-img {
+    height: 20px;
+    width: 20px;
+}
+.myColor {
+    background-color: #FFE695;
+    margin-left: 100px;
+    margin-right: 100px;
+}

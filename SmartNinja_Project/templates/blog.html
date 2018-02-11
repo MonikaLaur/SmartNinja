@@ -1,21 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Blog</title>
-</head>
-<body>
-    <h1>Blog Page</h1>
-    <h2> My Lucky Number: {{site_my_number}}</h2> <!-- {{ wert }} -->
-    <h3>Today is: {{time}}</h3>
-    <br>
-    <br>
-    <h3> History</h3>
-    <ul>
-        {% for entry in site_history %}
-        <li>{{entry}}</li>
-        {% endfor %}
-    </ul>
 
-</body>
-</html>
+{% extends "frame.html" %}
+
+{% block title %} .blog {% endblock title %}
+
+
+{% block page_content %}
+
+<h1>Message Blog</h1>
+<br>
+
+<div class="container-fluid">
+    <div class="input_fields">
+        <h2>Enter Message Bellow </h2>
+        <p>To leave a message enter your name and your message text in the form bellow</p>
+        <form method="post">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" placeholder="Name" name="name" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="msg">Message:</label>
+                <input type="text" placeholder="Message" name="message_text" class="form-control" id="msg">
+            </div>
+            <button class="btn btn-warning btn-lg" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+{% for message in messages %}
+<div class="panel panel-info">
+    <div class="panel-heading">{{ message.name }} <a href="/message/{{ message.key.id() }}/edit">Edit Message </a><a href="/message/{{ message.key.id() }}/delete">  Delete Message</a></div>
+    <div class="panel-body">
+        {{ message.message_text }}
+    </div>
+</div>
+{% endfor %}
+
+
+{% endblock page_content %}

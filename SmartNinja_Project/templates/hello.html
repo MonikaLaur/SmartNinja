@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>SmartNinja basic Jinja template</title>
+{% extends "frame.html" %}
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <h1>Hey, Super Smart Ninja ;)</h1>
-</body>
-</html>
+{% block title %} .welcomePage {% endblock title %}
+
+
+{% block page_content %}
+
+<h1>Welcome to MSL! </h1>
+
+<!-- <div class="container"> -->
+  <div class="jumbotron">
+    <h1>Hello there!</h1>
+    <p>Watch out! You are now entering a creative space.<br> This page features projects created by MSL using:  </p>
+        <ul>
+            <li> HTML </li>
+            <li> CSS </li>
+            <li> Bootstrap </li>
+            <li> Python </li>
+            <li> JavaScript </li>
+        </ul>
+    <p> To see all the project click on .projects in the navbar, otherwise stay tuned for updates!  </p>
+
+
+  </div>
+<!-- </div>  -->
+
+{% endblock page_content %}

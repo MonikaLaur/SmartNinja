@@ -1,0 +1,24 @@
+{% extends "frame.html" %}
+
+{% block title %} .luckyNumber {% endblock title %}
+
+
+{% block page_content %}
+
+<h1>The Lucky Number Generator</h1>
+<br>
+<h3> Welcome to the lucky number generator! </h3>
+<br>
+
+<h2> Today's Lucky Number is: {{site_my_number}}</h2> <!-- {{ wert }} -->
+<h3>Today is: {{time}}</h3>
+<br>
+<br>
+<h3> History</h3>
+<ul>
+    {% for entry in site_history %}
+    <li>{{entry}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock page_content %}

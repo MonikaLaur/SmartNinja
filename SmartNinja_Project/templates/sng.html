@@ -1,0 +1,42 @@
+{% extends "frame.html" %}
+
+{% block title %} .secretNumber {% endblock title %}
+
+
+{% block page_content %}
+
+<h1> Welcome to the Secret Number Game</h1>
+
+{% if is_guessed %}
+        <h3> Congratulations you guessed correct! </h3>
+    {% else %}
+        {% if has_guessed %}
+            <h3>Sorry you guessed wrong!</h3>
+        {% endif %}
+
+            <h2> Guess the secret number </h2>
+            <form method="post"> <!-- action="/formposts" inside the tag would tell you where to send it -->
+                <input placeholder="secret number" type="number" name="Numberguess">
+                <button type="submit">Submit </button>
+            </form>
+
+    {% endif %}
+<br>
+<br>
+    <form method="post">
+        <button type="submit" value="a" name="answer">Answer A </button>
+    </form>
+    <form method="post">
+        <button type="submit" value="b" name="answer">Answer B </button>
+    </form>
+    <form method="post">
+        <button type="submit" value="c" name="answer">Answer C </button>
+    </form>
+    <form method="post">
+        <button type="submit" value="d" name="answer">Answer D </button>
+    </form>
+
+    <h5>you pressed {{answer}}</h5>
+
+{% endblock page_content %}
+
