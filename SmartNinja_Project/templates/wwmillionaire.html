@@ -1,0 +1,52 @@
+{% extends "frame.html" %}
+
+{% block title %} .millionaire {% endblock title %}
+
+
+{% block page_content %}
+
+<h1> Can you answer this $1million question?</h1>
+<br>
+<h3> Which insect shorted out an early supercomputer and inspired the term "computer bug"? </h3>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <form method="post">
+        <button class="btn btn-warning btn-lg" type="submit" value="a" name="answer"> a. Moth </button>
+    </form>
+  </div>
+  <div class="btn-group" role="group">
+    <form method="post">
+        <button class="btn btn-warning btn-lg" type="submit" value="b" name="answer"> b. Roach </button>
+    </form>
+  </div>
+</div>
+
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <form method="post">
+        <button class="btn btn-warning btn-lg" type="submit" value="c" name="answer"> c. Fly </button>
+    </form>
+  </div>
+  <div class="btn-group" role="group">
+    <form method="post">
+        <button class="btn btn-warning btn-lg" type="submit" value="d" name="answer"> d. Japanese Beetle </button>
+    </form>
+  </div>
+</div>
+
+<br>
+<br>
+
+    <h3> You pressed {{answer}}</h3>
+
+{% if is_guessed %}
+        <h3> Congratulations you guessed correct! The answer is a. Moth</h3>
+    {% else %}
+        {% if has_guessed %}
+            <h3>Sorry you guessed wrong!</h3>
+        {% endif %}
+    {% endif %}
+
+{% endblock page_content %}
+

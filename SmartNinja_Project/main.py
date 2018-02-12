@@ -139,9 +139,21 @@ class sngHandler(BaseHandler):
         userguess = int(userguess or 0)
         is_guessed = secret == userguess
 
-        answer = self.request.get("answer")
-        return self.render_template("sng.html", params={"is_guessed": is_guessed, "has_guessed": has_guessed, "answer": answer})
+        return self.render_template("sng.html", params={"is_guessed": is_guessed, "has_guessed": has_guessed})
 
+class millionaireHandler(BaseHandler):
+    def get(self):
+        return self.render_template("wwmillionaire.html")
+
+
+    def post(self):
+        has_guessed = True
+        userguess = self.request.get("answer")
+        secret = "a"
+        is_guessed = secret == userguess
+
+        answer = self.request.get("answer")
+        return self.render_template("wwmillionaire.html", params={"is_guessed": is_guessed, "has_guessed": has_guessed, "answer": answer})
 
 class LotteryHandler(BaseHandler):
     def get(self):
@@ -178,6 +190,7 @@ app = webapp2.WSGIApplication([
     webapp2.Route('/luckynumber', LuckyNumberHandler),
     webapp2.Route('/lottery', LotteryHandler),
     webapp2.Route('/sng', sngHandler),
+    webapp2.Route('/millionaire', millionaireHandler),
     webapp2.Route('/logintest', LoginHandler, name="logintest"),
     webapp2.Route('/message/<message_id:\d+>/edit', EditMessageHandler),
     webapp2.Route('/message/<message_id:\d+>/delete', DeleteMessageHandler)
